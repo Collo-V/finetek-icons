@@ -31,7 +31,9 @@ const sharedRollupConfig = {
         peerDepsExternal(),
         postcss(),
         url({
-            include: ['**/*.png', '**/*.jpg', '**/*.gif', '**/*.svg', '**/*.woff', '**/*.woff2', '**/*.eot', '**/*.ttf', '**/*.otf'],
+            include: [
+                '**/*.svg',
+            ],
             limit: 8192,
             emitFiles: true,
             fileName: '[name].[hash][extname]',
