@@ -28,7 +28,7 @@ const sharedRollupConfig = {
         nodeResolve(),
         babel({
             exclude: 'node_modules/**',
-            babelHelpers: 'runtime',
+            babelHelpers: 'bundled',
         }),
         commonjs(),
         del({ targets: 'dist/*' }),
