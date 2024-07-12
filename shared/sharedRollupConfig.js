@@ -5,6 +5,7 @@ import postcss from 'rollup-plugin-postcss';
 import del from 'rollup-plugin-delete';
 import babel from '@rollup/plugin-babel';
 import url from '@rollup/plugin-url'
+import copy from 'rollup-plugin-copy-assets'
 const packageJson = require("finetek-icons-regular/package.json");
 const sharedRollupConfig = {
     input: 'src/index.js',
@@ -30,6 +31,11 @@ const sharedRollupConfig = {
         commonjs(),
         del({ targets: 'dist/*' }),
         peerDepsExternal(),
+        copy({
+            assets: [
+                "src/assets",
+            ],
+        }),
         postcss()
 
     ],
