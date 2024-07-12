@@ -7,6 +7,7 @@
     "dist"
   ],
   "dependencies": {
+
     "@svgr/webpack": "^8.1.0",
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
@@ -51,6 +52,7 @@
     "@rollup/plugin-babel": "^6.0.4",
     "@rollup/plugin-commonjs": "^26.0.1",
     "@rollup/plugin-node-resolve": "^15.2.3",
+    "@rollup/plugin-url": "^8.0.2",
     "babel-loader": "^9.1.3",
     "react-app-rewired": "^2.2.1",
     "rollup": "^2.79.1",
@@ -61,5 +63,5 @@
     "webpack": "^5.92.1",
     "webpack-cli": "^5.1.4"
   },
-  "gitHead": "14104d267174bd5a175415eabcffceb637ec0e0f"
+  "gitHead": "9997a773b8b101f98ed6720320e2630b80760071"
 }
