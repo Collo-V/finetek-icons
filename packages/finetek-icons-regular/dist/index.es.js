@@ -7,7 +7,7 @@ function AngleDown(_ref) {
     style
   } = _ref;
   if (!className) className = '';
-  const Icon = require('../assets/navigation-icons/angle-down-solid.svg').default;
+  const Icon = require('../src/assets/navigation-icons/angle-down-solid.svg').default;
   style = (_style = style) !== null && _style !== void 0 ? _style : {};
   if (!className.includes('fill-')) {
     style = {
