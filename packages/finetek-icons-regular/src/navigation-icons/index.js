@@ -19,7 +19,7 @@ export function AngleDown({className, style}) {
 export function AngleLeft({className, style}) {
     if (!className) className = ''
     className += ' rotate-90'
-    const Icon = require('../src/assets/navigation-icons//navigation-icons/angle-down-solid.svg').default
+    const Icon = require('../src/assets/navigation-icons/navigation-icons/angle-down-solid.svg').default
     const {ReactComponent: Svg} = Icon
     style = style ?? {}
     if (!className.includes('fill-')) {

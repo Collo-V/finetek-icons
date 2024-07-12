@@ -28,7 +28,7 @@ function AngleLeft(_ref2) {
   } = _ref2;
   if (!className) className = '';
   className += ' rotate-90';
-  const Icon = require('../src/assets/navigation-icons//navigation-icons/angle-down-solid.svg').default;
+  const Icon = require('../src/assets/navigation-icons/navigation-icons/angle-down-solid.svg').default;
   style = (_style2 = style) !== null && _style2 !== void 0 ? _style2 : {};
   if (!className.includes('fill-')) {
     style = {
