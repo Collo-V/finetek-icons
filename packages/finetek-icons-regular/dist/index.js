@@ -15,7 +15,7 @@ function AngleDown(_ref) {
     style
   } = _ref;
   if (!className) className = '';
-  const Icon = require('../assets/navigation-icons/angle-down-solid.svg').default;
+  const Icon = require('./assets/navigation-icons/angle-down-solid.svg').default;
   style = (_style = style) !== null && _style !== void 0 ? _style : {};
   if (!className.includes('fill-')) {
     style = {
@@ -36,7 +36,7 @@ function AngleLeft(_ref2) {
   } = _ref2;
   if (!className) className = '';
   className += ' rotate-90';
-  const Icon = require('../assets/navigation-icons/navigation-icons/angle-down-solid.svg').default;
+  const Icon = require('./assets/navigation-icons/navigation-icons/angle-down-solid.svg').default;
   style = (_style2 = style) !== null && _style2 !== void 0 ? _style2 : {};
   if (!className.includes('fill-')) {
     style = {
@@ -57,7 +57,7 @@ function AngleRight(_ref3) {
   } = _ref3;
   if (!className) className = '';
   className += ' -rotate-90';
-  const Icon = require('../assets/navigation-icons/angle-down-solid.svg').default;
+  const Icon = require('./assets/navigation-icons/angle-down-solid.svg').default;
   style = (_style3 = style) !== null && _style3 !== void 0 ? _style3 : {};
   if (!className.includes('fill-')) {
     style = {
@@ -78,7 +78,7 @@ function AngleUp(_ref4) {
   } = _ref4;
   if (!className) className = '';
   className += ' rotate-180';
-  const Icon = require('../assets/navigation-icons/angle-down-solid.svg').default;
+  const Icon = require('./assets/navigation-icons/angle-down-solid.svg').default;
   style = (_style4 = style) !== null && _style4 !== void 0 ? _style4 : {};
   if (!className.includes('fill-')) {
     style = {
@@ -98,7 +98,7 @@ function Bars(_ref5) {
     style
   } = _ref5;
   if (!className) className = '';
-  const Icon = require('../assets/navigation-icons/bars-solid.svg').default;
+  const Icon = require('./assets/navigation-icons/bars-solid.svg').default;
   style = (_style5 = style) !== null && _style5 !== void 0 ? _style5 : {};
   if (!className.includes('fill-')) {
     style = {

@@ -6,6 +6,7 @@ import del from 'rollup-plugin-delete';
 import babel from '@rollup/plugin-babel';
 import url from '@rollup/plugin-url'
 import copy from 'rollup-plugin-copy-assets'
+import svgr from '@svgr/rollup'
 const packageJson = require("finetek-icons-regular/package.json");
 const sharedRollupConfig = {
     input: 'src/index.js',
@@ -14,15 +15,16 @@ const sharedRollupConfig = {
             file: packageJson.main,
             format: 'cjs',
             sourcemap: true,
+            assetFileNames: 'assets/[name]-[hash][extname]',
         },
         {
             file: packageJson.module,
             format: 'esm',
             sourcemap: true,
+            assetFileNames: 'assets/[name]-[hash][extname]',
         },
     ],
     plugins: [
-        url(),
         nodeResolve(),
         babel({
             exclude: 'node_modules/**',
@@ -36,6 +38,15 @@ const sharedRollupConfig = {
                 "src/assets",
             ],
         }),
+        url({
+            include: ['**/*.png', '**/*.jpg', '**/*.gif', '**/*.svg', '**/*.woff', '**/*.woff2', '**/*.eot', '**/*.ttf', '**/*.otf'],
+            limit: 8192,
+            emitFiles: true,
+            fileName: '[name].[hash][extname]',
+            publicPath: 'assets/',
+            destDir: 'dist/assets',
+        }),
+        svgr(),
         postcss()
 
     ],
