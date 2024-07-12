@@ -21,6 +21,7 @@ const sharedRollupConfig = {
         },
     ],
     plugins: [
+        url(),
         nodeResolve(),
         babel({
             exclude: 'node_modules/**',
@@ -29,15 +30,7 @@ const sharedRollupConfig = {
         commonjs(),
         del({ targets: 'dist/*' }),
         peerDepsExternal(),
-        postcss(),
-        url({
-            include: [
-                '**/*.svg',
-            ],
-            limit: 8192,
-            emitFiles: true,
-            fileName: '[name].[hash][extname]',
-        }),
+        postcss()
 
     ],
     external:['react', 'react-dom'],
