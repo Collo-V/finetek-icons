@@ -60,5 +60,6 @@
     "rollup-plugin-typescript2": "^0.36.0",
     "webpack": "^5.92.1",
     "webpack-cli": "^5.1.4"
-  }
+  },
+  "gitHead": "14104d267174bd5a175415eabcffceb637ec0e0f"
 }
