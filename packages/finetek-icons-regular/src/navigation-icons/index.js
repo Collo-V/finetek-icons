@@ -2,7 +2,7 @@ import React from "react";
 
 export function AngleDown({className, style}) {
     if (!className) className = ''
-    const Icon = require('../assets/navigation-icons/angle-down-solid.svg').default
+    const Icon = require('../src/assets/navigation-icons/angle-down-solid.svg').default
     const {ReactComponent: Svg} = Icon
     style = style ?? {}
     if (!className.includes('fill-')) {
