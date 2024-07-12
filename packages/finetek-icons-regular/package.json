@@ -4,7 +4,8 @@
   "main": "dist/index.js",
   "module": "dist/index.es.js",
   "files": [
-    "dist"
+    "dist",
+    "src/**/icons/**/*"
   ],
   "repository": "git://github.com/Collo-V/finetek-icons/tree/master",
   "dependencies": {
