@@ -1,1 +1,1 @@
-This is awesome
+This is awesome library for icons from Finetek
